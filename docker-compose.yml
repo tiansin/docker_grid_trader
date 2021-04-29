@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  binance_grid_trader:
+    image: binance_grid_trader:latest
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    # restart: always
+    environment:
+      PLATFORM: "binance_spot"
+      SYMBOL: "BNBUSDT"
+      API_DOMAIN: "binancezh.co"
+      API_KEY: ""
+      API_SECRET: ""
+      GAP_PERCENT: 0.01
+      QUANTITY: 1
+      MIN_PRICE: 0.0001
+      MIN_QTY: 0.01
+      MAX_ORDERS: 1
+      PROXY_HOST: ""
+      PROXY_PORT: 0
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+
