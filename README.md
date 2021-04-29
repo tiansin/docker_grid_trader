@@ -17,8 +17,35 @@
 - 生成API密钥:
   - [https://www.binance.com/zh-CN/my/settings/api-management](https://www.binance.com/zh-CN/my/settings/api-management)
 
-### 第二步 修改`docker-compose.yml`配置文件
+### 第二步 创建并修改`docker-compose.yml`配置文件
 
+docker-compose.yml 文件内容
+```yml
+version: '2'
+
+services:
+  binance_grid_trader:
+    image: tiansin/binance_grid_trader:latest
+    environment:
+      PLATFORM: "binance_spot"
+      SYMBOL: "BNBUSDT"
+      API_DOMAIN: "binancezh.co"
+      API_KEY: ""
+      API_SECRET: ""
+      GAP_PERCENT: 0.01
+      QUANTITY: 1
+      MIN_PRICE: 0.0001
+      MIN_QTY: 0.01
+      MAX_ORDERS: 1
+      PROXY_HOST: ""
+      PROXY_PORT: 0
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+```
+
+修改其中的环境变量
 ```yml
   PLATFORM: "binance_spot"
   SYMBOL: "BNBUSDT"
@@ -33,7 +60,6 @@
   PROXY_HOST: ""
   PROXY_PORT: 0
 ```
-
 
 1. `PLATFORM` 是交易的平台, 填写 binance_spot (现货) 或者 binance_future (合约)
 2. `SYMBOL` 交易对: BTCUSDT, BNBUSDT等

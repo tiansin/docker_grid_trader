@@ -38,4 +38,4 @@ CMD cat config.json | \
     jq ".max_orders = \"${MAX_ORDERS}\"" | \
     jq ".proxy_host = \"${PROXY_HOST}\"" | \
     jq ".proxy_port = \"${PROXY_PORT}\"" | sponge config.json && \
-    python3 main.py
+    python3 -u main.py
