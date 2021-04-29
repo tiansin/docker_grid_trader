@@ -2,7 +2,7 @@ version: '2'
 
 services:
   binance_grid_trader:
-    image: binance_grid_trader:latest
+    image: tiansin/binance_grid_trader:latest
     build: 
       context: ./
       dockerfile: Dockerfile
