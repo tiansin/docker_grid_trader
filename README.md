@@ -9,6 +9,15 @@
 1. 安装 docker
 2. 安装 docker-compose
 
+### Centos7安装参考: 
+ - [https://www.cnblogs.com/ruanqin/p/11082506.html](https://www.cnblogs.com/ruanqin/p/11082506.html)
+
+### Win10安装参考: 
+ - [https://www.cnblogs.com/makalochen/p/14286100.html](https://www.cnblogs.com/makalochen/p/14286100.html)
+
+### Ubuntu安装参考:
+ - [https://www.jianshu.com/p/482d1eb4d9a2](https://www.jianshu.com/p/482d1eb4d9a2)
+
 ### 第一步 注册币安账号
 
 - 注册币安账号返佣10%
