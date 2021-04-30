@@ -1,7 +1,7 @@
 # 网格交易策略
 
 ## 为什么要使用此策略
-1. 风格交易策略风险小,回撤率低,收益靠谱
+1. 网格交易策略风险小,回撤率低,收益靠谱
 2. 基本不用人工干预,可在服务器24小时挂机
 3. 非常适合币圈行情
 
@@ -36,6 +36,7 @@ version: '2'
 services:
   binance_grid_trader:
     image: tiansin/binance_grid_trader:latest
+    restart: always
     environment:
       PLATFORM: "binance_spot"
       SYMBOL: "BNBUSDT"

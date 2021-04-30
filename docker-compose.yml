@@ -6,7 +6,7 @@ services:
     build: 
       context: ./
       dockerfile: Dockerfile
-    # restart: always
+    restart: always
     environment:
       PLATFORM: "binance_spot"
       SYMBOL: "BNBUSDT"
