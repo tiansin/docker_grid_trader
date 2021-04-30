@@ -1,7 +1,7 @@
 # 网格交易策略
 
 ## 为什么要使用此策略
-1. 风险小,回撤率低,收益靠谱
+1. 风格交易策略风险小,回撤率低,收益靠谱
 2. 基本不用人工干预,可在服务器24小时挂机
 3. 非常适合币圈行情
 
@@ -13,6 +13,7 @@
 
 - 注册币安账号返佣10%
    - [https://www.binance.com/zh-CN/register?ref=F6P7LQM3](https://www.binance.com/zh-CN/register?ref=F6P7LQM3)
+   - ![image](https://github.com/tiansin/docker_grid_trader/blob/master/qr.jpeg)
 
 - 生成API密钥:
   - [https://www.binance.com/zh-CN/my/settings/api-management](https://www.binance.com/zh-CN/my/settings/api-management)
@@ -73,8 +74,8 @@ services:
    
 9. `MIN_QTY`: 最小的下单量, 现货B要求最小下单是10USDT等值的币, 而对于合约来说,BTCUSDT要求是0.001个BTC
 10. `MAX_ORDERS`: 单边的挂单量,超过则取消之前的挂单
-11. `PROXY_HOST`: 如果需要用代理的话，请填写你的代理
-12. `PROXY_PORT`: 代理端口号
+11. `PROXY_HOST`: 如果需要用代理的话，请填写你的代理,如: 127.0.0.1
+12. `PROXY_PORT`: 代理端口号,如: 8080
 
 
 ### 第三步 上传配置文件并启动服务
