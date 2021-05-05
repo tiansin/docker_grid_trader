@@ -9,7 +9,7 @@
 1. 安装 docker
 2. 安装 docker-compose
 
-### Centos7安装参考: 
+### Centos7安装参考(推荐): 
  - [https://www.cnblogs.com/ruanqin/p/11082506.html](https://www.cnblogs.com/ruanqin/p/11082506.html)
 
 #### Win10安装参考: 
@@ -21,7 +21,7 @@
 ### 第一步 注册币安账号
 
 - 注册币安账号返佣10%
-   - [https://www.binance.com/zh-CN/register?ref=F6P7LQM3](https://www.binance.com/zh-CN/register?ref=F6P7LQM3)
+   - [https://accounts.binancezh.io/zh-CN/register?ref=F6P7LQM3](https://accounts.binancezh.io/zh-CN/register?ref=F6P7LQM3)
    - ![image](https://github.com/tiansin/docker_grid_trader/blob/master/qr.jpeg)
 
 - 生成API密钥:
